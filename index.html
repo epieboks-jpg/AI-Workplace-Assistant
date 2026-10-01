@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Workplace Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">AI PRODUCTIVITY TOOL</p>
+      <h1>AI Workplace Assistant</h1>
+      <p class="subtitle">A practical assistant for everyday workplace tasks.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Work smarter, communicate better.</h2>
+      <p>Choose a workplace task below and enter your information. The assistant will create a useful starting point that you can review and edit.</p>
+    </section>
+
+    <section class="grid">
+      <button class="card" data-type="email">
+        <span>✉️</span><h3>Email Generator</h3><p>Create a professional workplace email.</p>
+      </button>
+      <button class="card" data-type="meeting">
+        <span>📝</span><h3>Meeting Summarizer</h3><p>Turn notes into a clear meeting summary.</p>
+      </button>
+      <button class="card" data-type="tasks">
+        <span>✅</span><h3>Task Planner</h3><p>Organize work into actionable steps.</p>
+      </button>
+      <button class="card" data-type="research">
+        <span>🔎</span><h3>Research Assistant</h3><p>Structure research questions and next steps.</p>
+      </button>
+      <button class="card" data-type="chat">
+        <span>💬</span><h3>Workplace Chatbot</h3><p>Ask a general workplace question.</p>
+      </button>
+    </section>
+
+    <section class="workspace">
+      <label for="inputText">Your request</label>
+      <textarea id="inputText" placeholder="Select a feature above, then enter your request here..."></textarea>
+      <button id="generateBtn">Generate</button>
+
+      <div class="result">
+        <div class="result-head">
+          <h3>Assistant response</h3>
+          <button id="copyBtn" class="secondary">Copy</button>
+        </div>
+        <pre id="output">Your generated result will appear here.</pre>
+      </div>
+    </section>
+
+    <section class="ethics">
+      <h2>Responsible AI</h2>
+      <p>AI output should be reviewed by a person before it is used at work. Do not enter confidential, private, password, financial, or sensitive personal information into an AI tool. Check important facts and use AI as an assistant rather than as the final decision-maker.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>AI Workplace Assistant • Educational project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
